@@ -10,6 +10,6 @@ func TestChallenge2(t *testing.T) {
 	expected := "746865206b696420646f6e277420706c6179"
 	msg, err := Challenge2(challenge_string, xor_against)
 	if err != nil || expected != msg {
-		t.Fatalf(`Challenge1(%s) = %s, %v; want %s, nil`, challenge_string, msg, err, expected)
+		t.Fatalf(`Challenge2(%s) = %s, %v; want %s, nil`, challenge_string, msg, err, expected)
 	}
 }
